@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/bin/nodejs /usr/bin/yarn
+
+PATH: 
+  /home/vagrant/.composer/vendor/bin:/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  0.18.0
+
+Node version: 
+  6.9.1
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "prod": "gulp --production",
+      "dev": "gulp watch"
+    },
+    "devDependencies": {
+      "bootstrap-sass": "^3.3.7",
+      "gulp": "^3.9.1",
+      "jquery": "^3.1.0",
+      "laravel-elixir": "^6.0.0-9",
+      "laravel-elixir-vue-2": "^0.2.0",
+      "laravel-elixir-webpack-official": "^1.0.2",
+      "lodash": "^4.16.2",
+      "vue": "^2.0.1",
+      "vue-resource": "^1.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPROTO: protocol error, symlink '../../../browserslist/cli.js' -> '/home/vagrant/Code/laravel/node_modules/autoprefixer/node_modules/.bin/browserslist'
+      at Error (native)
