@@ -26,6 +26,9 @@ Route::get('/chat', function(){
 Route::get('/cat', function(){
     return 'cat';
 });
+Route::get('/poop', function(){
+    return 'cat poop';
+});
 
 Auth::routes();
 
