@@ -30,8 +30,8 @@ Route::get('/poop', function(){
     return 'cat poop';
 });
 Route::get('/users', function(){
-    dd(App\Users::all());
-    return App\Users::all();
+    dd(App\User::all());
+    return App\User::all();
 });
 
 
