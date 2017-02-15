@@ -29,6 +29,10 @@ Route::get('/cat', function(){
 Route::get('/poop', function(){
     return 'cat poop';
 });
+Route::get('/users', function(){
+    dd(App\Users::all());
+});
+
 
 Auth::routes();
 
