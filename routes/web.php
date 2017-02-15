@@ -31,6 +31,7 @@ Route::get('/poop', function(){
 });
 Route::get('/users', function(){
     dd(App\Users::all());
+    return App\Users::all();
 });
 
 
