@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Notes extends Migration
+class Contact extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,16 @@ class Notes extends Migration
      */
     public function up()
     {
-        Schema::create('note', function (Blueprint $table) {
+         Schema::create('contact', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->string('content');
-            $table->date('reminder'); 
+            $table->string('gender');
+            $table->string('name');
+            $table->string('nickname');
+            $table->string('phone');
+            $table->string('email');
             $table->integer('owner');
-            $table->string('tags');
+            $table->string('job');
+            $table->string('disabilities'); 
             $table->timestamps();});
     }
 
