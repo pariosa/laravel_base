@@ -34,7 +34,7 @@
 		form += '<div class="col-md-2"><input type="text" class="form-control input-sm" name="job" placeholder="Job" value="'+$('.job-'+id).text()+'"/></div>';
 		form += '<div class="col-md-2"><input type="text" class="form-control input-sm" name="gender" placeholder="gender" value="'+$('.gender-'+id).text()+'"/></div>';
 		form += '<div class="col-md-3"><input type="text" class="form-control input-sm" name="disabilities" placeholder="disabilities" value="'+$('.disabilities-'+id).text()+'"/></div>';
-		form += '<input type="text" class="hidden" name="owner" value="1"/>';
+		form += '<input type="text" class="hidden" name="owner" value="{{auth()->user()->id}}"/>';
 		form += '<button class="btn btn-primary btn-sm btn-success" value="submit">update Contact</button>';
 		form += '</form>';
 
