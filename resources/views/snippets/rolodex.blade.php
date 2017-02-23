@@ -11,7 +11,7 @@
 		form += '<div class="col-md-2"><input type="text" class="form-control input-sm" name="job" placeholder="Job"/></div>';
 		form += '<div class="col-md-2"><input type="text" class="form-control input-sm" name="gender" placeholder="gender"/></div>';
 		form += '<div class="col-md-3"><input type="text" class="form-control input-sm" name="disabilities" placeholder="disabilities"/></div>';
-						form += '<div class="col-md-4"><input type="text" class="form-control input-sm" name="address" placeholder="address" value="'+$('.disabilities-'+id).text()+'"/></div>';
+						form += '<div class="col-md-4"><input type="text" class="form-control input-sm" name="address" placeholder="address" value="'+$('.address-'+id).text()+'"/></div>';
 
 		form += '<input type="text" class="hidden" name="owner" value="{{auth()->user()->id}}"/>';
 		form += '<button class="btn btn-primary btn-success btn-sm" value="submit">Create Contact</button>';
@@ -36,7 +36,7 @@
 		form += '<div class="col-md-2"><input type="text" class="form-control input-sm" name="job" placeholder="Job" value="'+$('.job-'+id).text()+'"/></div>';
 		form += '<div class="col-md-2"><input type="text" class="form-control input-sm" name="gender" placeholder="gender" value="'+$('.gender-'+id).text()+'"/></div>';
 		form += '<div class="col-md-3"><input type="text" class="form-control input-sm" name="disabilities" placeholder="disabilities" value="'+$('.disabilities-'+id).text()+'"/></div>';
-				form += '<div class="col-md-4"><input type="text" class="form-control input-sm" name="address" placeholder="address" value="'+$('.disabilities-'+id).text()+'"/></div>';
+				form += '<div class="col-md-4"><input type="text" class="form-control input-sm" name="address" placeholder="address" value="'+$('.address-'+id).text()+'"/></div>';
 
 		form += '<input type="text" class="hidden" name="owner" value="{{auth()->user()->id}}"/>';
 		form += '<button class="btn btn-primary btn-sm btn-success" value="submit">update Contact</button>';
@@ -57,7 +57,7 @@
 		form += '<div class="col-md-2"><input type="text" class="form-control input-sm" name="job" placeholder="Job"/></div>';
 		form += '<div class="col-md-2"><input type="text" class="form-control input-sm" name="gender" placeholder="gender"/></div>';
 		form += '<div class="col-md-2"><input type="text" class="form-control input-sm" name="disabilities" placeholder="disabilities"/></div>';
-						form += '<div class="col-md-4"><input type="text" class="form-control input-sm" name="address" placeholder="address" value="'+$('.disabilities-'+id).text()+'"/></div>';
+						form += '<div class="col-md-4"><input type="text" class="form-control input-sm" name="address" placeholder="address" value="'+$('.address-'+id).text()+'"/></div>';
 
 		form += '<input type="text" class="hidden" name="owner" value="{{auth()->user()->id}}"/>';
 		form += '<button class="btn btn-info btn-sm" value="submit">Search!</button>';

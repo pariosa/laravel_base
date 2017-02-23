@@ -38,7 +38,7 @@
 				</div>
 
 				<div class="col-xs-4 col-sm-1 col-md-3">
-				Job: <span class="address-{{$contact->id}}">{{$contact->address}}</span>
+				Address: <span class="address-{{$contact->id}}">{{$contact->address}}</span>
 				</div>
 				<div class="col-xs-4  col-sm-1 col-md-3">
 				Job: <span class="job-{{$contact->id}}">{{$contact->job}}</span>
@@ -73,7 +73,7 @@
 
 
 								<button class="btn btn-danger btn-xs btn-primary" data-toggle="modal" data-target="#delete-{{$contact->id}}">Delete</button>
-								<button class=" edit-btn btn btn-primary btn-sm btn-warning" onclick="updateForm({{$contact->id}})">&nbsp;Edit&nbsp;</button>
+								<button class=" edit-btn btn btn-primary btn-xs btn-warning" onclick="updateForm({{$contact->id}})">&nbsp;Edit&nbsp;</button>
 
 				</div>
 
