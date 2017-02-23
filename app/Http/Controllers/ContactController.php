@@ -140,7 +140,7 @@ class ContactController extends Controller
     	$contact->nickname = $request->nickname;
     	$contact->email = $request->email;
     	$contact->phone = $request->phone;
-    	$contact->phone = $request->address;
+    	$contact->address = $request->address;
     	$contact->owner = $request->owner;
     	$contact->job = $request->job;
     	$contact->disabilities = $request->disabilities;
