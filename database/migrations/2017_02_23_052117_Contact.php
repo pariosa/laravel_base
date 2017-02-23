@@ -1,4 +1,4 @@
-<?php
+'<?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -34,6 +34,6 @@ class Contact extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('contact');
     }
 }

@@ -30,6 +30,6 @@ class Notes extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('note');
     }
 }
