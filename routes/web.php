@@ -20,6 +20,8 @@ Route::post('/contact/delete', 'ContactController@delete');
 Route::post('/contact/update', 'ContactController@update');
 Route::post('/contact/create', 'ContactController@create');
 Route::get('/contacts', 'ContactController@read');
+Route::post('/contact/search', 'ContactController@search');
+Route::get('/contact/search', 'ContactController@search');
 
 Route::get('/home', function(){
     return view('home');
