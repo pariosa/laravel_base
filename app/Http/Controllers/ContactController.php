@@ -28,7 +28,8 @@ class ContactController extends Controller
         if ($request->email != ''){array_push($query, 'email'); array_push($query,$request->email);  $length++;}
         if ($request->job != ''){array_push($query, 'job'); array_push($query,$request->job);  $length++;}
         if ($request->disabilities != ''){ array_push($query, 'disabilities'); array_push($query,$request->disabilities);  $length++;}
-        if ($request->gender != ''){array_push($query, 'gender'); array_push($query,$request->gender);  $length++;}
+        if ($request->gender != ''){array_push($query, 'gender'); array_push($query,$request->gender);  $length++;}        if ($request->address != ''){array_push($query, 'address'); array_push($query,$request->address);  $length++;}
+
        $length2 = $length * 2;
         $results = [];
         $sql1 = "";
@@ -38,6 +39,7 @@ class ContactController extends Controller
         $sql5 = "";
         $sql6 = "";
         $sql7 = "";
+                $sql8 = "";
        for($x = 0; $x < ($length2); $x+=2){
           if($query[$x] == 'name'){
                  $sql1 = "`".$query[$x]. '` LIKE "%'.$query[$x+1].'%"';
@@ -53,7 +55,10 @@ class ContactController extends Controller
                  $sql6 = "`".$query[$x]. '` LIKE "%'.$query[$x+1].'%"';
                  }else if($query[$x] == 'phone'){
                  $sql7 = "`".$query[$x]. '` LIKE "%'.$query[$x+1].'%"';
-                 } 
+                 }
+                 else if($query[$x] == 'address'){
+                 $sql8 = "`".$query[$x]. '` LIKE "%'.$query[$x+1].'%"';
+                 }  
              }
 		$querystring= "";
         if($sql1 != "")
@@ -90,6 +95,11 @@ class ContactController extends Controller
           if($querystring != ""){ $querystring= $querystring. " AND ";}
           $querystring  = $querystring. $sql7;
         }
+        if($sql8 != "")
+        {
+          if($querystring != ""){ $querystring= $querystring. " AND ";}
+          $querystring  = $querystring. $sql7;
+        }
          if($querystring != ''){
           $contacts = \DB::select('SELECT * FROM contact WHERE '. $querystring);
           $eloquentarray= [];
@@ -115,6 +125,7 @@ class ContactController extends Controller
     		"nickname"=>$request->nickname,
     		"email"=>$request->email,
     		"phone"=>$request->phone,
+    		"address"=>$request->address,
     		"owner"=>$request->owner,
     		"job"=>$request->job,
     		"disabilities"=> $request->disabilities
@@ -129,6 +140,7 @@ class ContactController extends Controller
     	$contact->nickname = $request->nickname;
     	$contact->email = $request->email;
     	$contact->phone = $request->phone;
+    	$contact->phone = $request->address;
     	$contact->owner = $request->owner;
     	$contact->job = $request->job;
     	$contact->disabilities = $request->disabilities;

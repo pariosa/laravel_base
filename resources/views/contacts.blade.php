@@ -24,25 +24,29 @@
 				<span class="name-{{$contact->id}}">{{$contact->name}}</span>
 			</div>
 			<div class="panel-body">
-				<div class="col-sm-1">
+				<div class="col-xs-4 col-sm-1 col-md-3">
 				Gender: <span class="gender-{{$contact->id}}">{{$contact->gender}}</span>
 				</div>
-				<div class="col-sm-2">
+				<div class="col-xs-4 col-sm-2 col-md-3">
 				Nickname: <span class="nickname-{{$contact->id}}">{{$contact->nickname}}</span>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-xs-4 col-sm-3 col-md-3">
 				Email: <span class="email-{{$contact->id}}">{{$contact->email}}</span>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-xs-4 col-sm-3 col-md-3">
 				Phone: <span class="phone-{{$contact->id}}">{{$contact->phone}}</span>
 				</div>
-				<div class="col-sm-1">
+
+				<div class="col-xs-4 col-sm-1 col-md-3">
+				Job: <span class="address-{{$contact->id}}">{{$contact->address}}</span>
+				</div>
+				<div class="col-xs-4  col-sm-1 col-md-3">
 				Job: <span class="job-{{$contact->id}}">{{$contact->job}}</span>
 				</div>
-				<div class="col-sm-1">
+				<div class="col-xs-4 col-sm-1 col-md-3">
 				Disabilities: <span class="disabilities-{{$contact->id}}">{{$contact->disabilities}}</span>
 				</div>
-				<div class="col-sm-1">
+				<div class="col-xs-4 col-sm-1 col-md-3">
 				
 <div class="modal fade" id="delete-{{$contact->id}}">
   <div class="modal-dialog" role="document">

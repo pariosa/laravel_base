@@ -19,6 +19,7 @@ class Contact extends Migration
             $table->string('name');
             $table->string('nickname');
             $table->string('phone');
+            $table->string('address');
             $table->string('email');
             $table->integer('owner');
             $table->string('job');
