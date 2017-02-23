@@ -75,7 +75,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Calliexander
+                    Calxender
                 </div>
 
             @include('snippets.links')

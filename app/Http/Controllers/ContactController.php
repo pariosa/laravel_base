@@ -108,7 +108,7 @@ class ContactController extends Controller
       return view('contacts')->with($with);
 	}
     public function create(Request $request){
-
+  
     	Contact::create([
     		"gender"=>$request->gender,
     		"name"=>$request->name,
