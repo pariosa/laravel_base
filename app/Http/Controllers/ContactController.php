@@ -9,12 +9,15 @@ use Auth;
 class ContactController extends Controller
 {
 	public function read(Request $request){
+		if(auth()->user()){
 		$contacts = Contact::where('owner','=', auth()->user()->id)->paginate(10);
 
 		$with = [
 		'contacts' => $contacts->appends($request->all())
 		];
 		return view('contacts')->with($with);
+		}
+		else{return view('auth.login');}
 	}
 	public function search(Request $request){
 		$length = 0;

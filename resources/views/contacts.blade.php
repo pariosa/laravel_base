@@ -94,7 +94,5 @@
 
 @include('snippets.rolodex')
 </div>
-
-@else
-@include('auth.login')
+ 
 @endif
