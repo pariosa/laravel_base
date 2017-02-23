@@ -1,6 +1,6 @@
-@if(auth()->user())
-@include('layouts.app')
 
+@include('layouts.app')
+@if(auth()->user())
 <div class="container">
 
 	<div class="panel-default panel col-md-12 row">
