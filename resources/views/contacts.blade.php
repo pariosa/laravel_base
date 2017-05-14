@@ -44,7 +44,7 @@
 				Job: <span class="job-{{$contact->id}}">{{$contact->job}}</span>
 				</div>
 				<div class="col-xs-4 col-sm-1 col-md-3">
-				Disabilities: <span class="disabilities-{{$contact->id}}">{{$contact->disabilities}}</span>
+				Additional Info: <span class="disabilities-{{$contact->id}}">{{$contact->disabilities}}</span>
 				</div>
 				<div class="col-xs-4 col-sm-1 col-md-3">
 				
